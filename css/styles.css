@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 
+:root {
+  --darkgrey: gray;
+  --fuzzywhite: mintcream;
+  --hijau: lightgreen;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +27,9 @@ a {
 
 .header {
   border-bottom: 1px solid #e2e8f0;
+  background-color: var(--darkgrey);
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -41,7 +50,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: var(--fuzzywhite);
 }
 
 .nav-menu {
@@ -57,17 +66,34 @@ a {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #475569;
+  color: var(--fuzzywhite);
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: var(--hijau);
 }
 
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #482ff7;
+  color: var(--hijau);
+}
+
+
+
+
+
+
+
+
+ol li {
+  list-style-type: upper-greek;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fontBold {
+  font-weight: bold;
 }
 
 div .gallery {
@@ -85,30 +111,19 @@ div.desc {
   font-size: 1.5em;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
 .about {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
-  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 20pt;
+  margin-right: 20px;
+  color: rgb(61, 60, 60);
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
+  img {
     width: 100%;
   }
 }
@@ -119,9 +134,9 @@ div.desc {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--darkgrey);
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
