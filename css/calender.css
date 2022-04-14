@@ -1,12 +1,18 @@
 .text1 {
   text-align: center;
-  margin-bottom: -45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 20pt;
+  margin-right: 20px;
+  color: rgb(61, 60, 60);
 }
 
 table {
   border-collapse: collapse;
   margin: auto auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 table td {
@@ -14,12 +20,27 @@ table td {
   padding: 10px;
 }
 
-.hari{
+.hari {
   background: lightseagreen;
+  font-size: 1.5em;
+}
+tr td {
+  font-size: 1.5em;
 }
 
-span{
+span {
   color: rgb(3, 113, 108);
+}
+
+.keterangan {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 20pt;
+  margin-right: 20px;
+  color: rgb(61, 60, 60);
 }
 
 
