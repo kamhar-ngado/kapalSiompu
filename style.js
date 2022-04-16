@@ -1,5 +1,8 @@
 const d = new Date();
-document.getElementById("hari").innerHTML = d.getDay();
+
+const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+let day = days[d.getDay()];
+document.getElementById("hari").innerHTML = day;
 
 const months = [
   "Januari",
