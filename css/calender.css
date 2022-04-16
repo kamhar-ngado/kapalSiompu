@@ -42,3 +42,14 @@ span {
   margin-right: 20px;
   color: rgb(61, 60, 60);
 }
+
+.kalenderjs {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  margin-top: -8px;
+  color: rgb(61, 60, 60);
+}
+.kalenderjs tr td {
+  border: none;
+}
