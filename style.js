@@ -22,3 +22,5 @@ const months = [
 let month = months[d.getMonth()];
 document.getElementById("bulan").innerHTML = month;
 document.getElementById("tahun").innerHTML = d.getFullYear();
+
+document.getElementsByClassName("hari2").innerHTML = day;
