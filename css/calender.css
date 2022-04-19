@@ -44,14 +44,11 @@ span {
 }
 
 .kalenderjs {
-  text-align: left;
+  text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  margin-top: -8px;
+  font-size: 1.8em;
+  margin-top: 2px;
   color: rgb(61, 60, 60);
-}
-.kalenderjs tr td {
-  border: none;
 }
 
 .clock {
@@ -62,4 +59,5 @@ span {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
+  text-align: center;
 }

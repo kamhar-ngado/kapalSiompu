@@ -1,30 +1,31 @@
-let d = new Date();
-let s = d.getSeconds();
+function showDate() {
+  let d = new Date();
 
-const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-let day = days[d.getDay()];
-document.getElementById("hari").innerHTML = day;
+  const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  let day = days[d.getDay()];
+  const months = [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember",
+  ];
+  let month = months[d.getMonth()];
+  let year = d.getFullYear();
 
-const months = [
-  "Januari",
-  "Februari",
-  "Maret",
-  "April",
-  "Mei",
-  "Juni",
-  "Juli",
-  "Agustus",
-  "September",
-  "Oktober",
-  "November",
-  "Desember",
-];
+  let tanggal = day + ", " + month + " " + year;
 
-let month = months[d.getMonth()];
-document.getElementById("bulan").innerHTML = month;
-document.getElementById("tahun").innerHTML = d.getFullYear();
-document.getElementById("jam").innerHTML = d.getHours();
-document.getElementById("menit").innerHTML = d.getMinutes();
+  document.getElementById("tanggal").innerHTML = tanggal;
+}
+
+showDate();
 
 function showTime() {
   let d = new Date();
@@ -32,7 +33,11 @@ function showTime() {
   let m = d.getMinutes();
   let h = d.getHours();
 
-  h = h < 10 ? "0" + h : h;
+  if (h < 10) {
+    h = "0" + h;
+  } else {
+    h;
+  }
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
