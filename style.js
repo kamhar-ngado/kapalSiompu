@@ -29,9 +29,10 @@ document.getElementById("menit").innerHTML = d.getMinutes();
 function showTime() {
   let d = new Date();
   let s = d.getSeconds(); // 0 - 59
-  s = s < 10 ? "0" + s : s;
-  document.getElementById("jamDigital").innerText = s;
-  document.getElementById("jamDigital").textContent = s;
+  let m = d.getMinutes()
+  let h = d.getHours()
+  let time = h + ":" + m + ":" + s
+  document.getElementById("jamDigital").innerHTML = time;
   setTimeout(showTime, 1000);
 }
 showTime();
