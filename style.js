@@ -19,8 +19,9 @@ function showDate() {
   ];
   let month = months[d.getMonth()];
   let year = d.getFullYear();
+  let date = d.getDate()
 
-  let tanggal = day + ", " + month + " " + year;
+  let tanggal = day + ", " + date + " "+ month + " " + year;
 
   document.getElementById("tanggal").innerHTML = tanggal;
 }
