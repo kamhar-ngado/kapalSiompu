@@ -51,5 +51,16 @@ span {
   color: rgb(61, 60, 60);
 }
 .kalenderjs tr td {
-  /* border: none; */
+  border: none;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #17d4fe;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
 }

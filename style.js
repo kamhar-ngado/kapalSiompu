@@ -1,4 +1,5 @@
-const d = new Date();
+let d = new Date();
+let s = d.getSeconds();
 
 const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
 let day = days[d.getDay()];
@@ -22,5 +23,15 @@ const months = [
 let month = months[d.getMonth()];
 document.getElementById("bulan").innerHTML = month;
 document.getElementById("tahun").innerHTML = d.getFullYear();
+document.getElementById("jam").innerHTML = d.getHours();
+document.getElementById("menit").innerHTML = d.getMinutes();
 
-document.getElementsByClassName("hari2").innerHTML = day;
+function showTime() {
+  let d = new Date();
+  let s = d.getSeconds(); // 0 - 59
+  s = s < 10 ? "0" + s : s;
+  document.getElementById("jamDigital").innerText = s;
+  document.getElementById("jamDigital").textContent = s;
+  setTimeout(showTime, 1000);
+}
+showTime();
