@@ -1,6 +1,6 @@
-function showDate() {
-  let d = new Date();
+let d = new Date();
 
+function showDate() {
   const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
   let day = days[d.getDay()];
   const months = [
@@ -19,10 +19,8 @@ function showDate() {
   ];
   let month = months[d.getMonth()];
   let year = d.getFullYear();
-  let date = d.getDate()
-
-  let tanggal = day + ", " + date + " "+ month + " " + year;
-
+  let date = d.getDate();
+  let tanggal = day + ", " + date + " " + month + " " + year;
   document.getElementById("tanggal").innerHTML = tanggal;
 }
 
